@@ -1,0 +1,466 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+$font-family-mullish : 'Mulish', sans-serif; 
+$font-family-inter : 'Inter', sans-serif;
+:root {
+   --color-border: #004EEB;
+   --background-color : #155EEF;
+   --backgroud-banner :  rgba(255, 255, 255, 0.05);
+   --background-color-about :  #F5F5FF;
+   --color-about : #121926;
+   --color-text-layanan : #9AA4B2;
+   --box-faq : #F6F6FB;
+   --color-form: #757575;
+}
+.container{
+  .btn{
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: -50px;
+    cursor: pointer;
+    z-index: 300;
+    background-color: var(--color-border);
+    transition: 0.5s;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+    i{
+      color: #fff;
+    }
+  }
+  .btn.top{
+    right: 20px;
+  }
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 2%;
+    transition: 0.5s ease-in;
+    .container__header{
+      max-width: 1200px;
+      margin: 0px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo__nusa{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav.nav__header__my__nusa{
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          li.list__item__my_nusa{
+            list-style-type: none;
+            list-style-position: inside;
+            padding: 5px;
+            margin: 5px;
+            a.list__link_my_nusa{
+              text-decoration: none;
+              font-family: $font-family-mullish;
+              color: var(--color-nav) ;
+            }
+          }
+          li.list__item__my_nusa.active{
+            color: var(--color-form);
+          }
+        }
+        .button__nav__container{
+          button{
+            display: inline-block;
+            padding: 12px 30px;
+            background: unset;
+            outline: none;
+            border: none;
+            font-family: $font-family-mullish;
+            cursor: pointer;
+            margin: 0px 10px;
+            font-family: $font-family-inter;
+            font-weight: 500;
+            border-radius: 6px;
+          }
+          button.daftar__mu__nusa{
+            border: 1px solid var(--color-border);
+            color: var(--color-border);
+          
+          }
+          button.masuk__mu__nusa{
+            background-color: var(--background-color);
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  header.sticky{
+    position: fixed;
+    padding: 1% 2%;
+    top: 0;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+    z-index: 100;
+    background-color: var(--background-color-about);
+  }
+  section.my__nusa{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: var(--backgroud-banner);
+    .container__my__nusa{
+      max-width: 1200px;
+      margin: 0px auto;
+      .row__my__nusa{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+        .box__my__nusa{
+          width: 450px;
+          height: 100%;
+          font-family: $font-family-mullish;
+          font-weight: 700px;
+          h1{
+            font-size: 35px;
+            letter-spacing: 1.5px;
+            span.blue__text{
+              color: var(--color-border);
+            }
+          }
+          .desc__text{
+            margin-top: 10px;
+            p{
+              font-size: 15px;
+              line-height: 1.5;
+            }
+          }
+          .button__banner{
+            margin-top: 30px;
+            button{
+              display: inline-block;
+              padding: 12px 30px;
+              margin-right:20px;
+              outline: none;
+              background: unset;
+              border: none;
+              font-family: $font-family-inter;
+              cursor: pointer;
+              border-radius: 6px;
+            }
+            button.btn__banner{
+              background-color: var(--background-color);
+              color: #fff;
+            }
+            button.btn__banner__no__bg{
+              border: 1px solid var(--color-border);
+              color: var(--color-border);
+            }
+          }
+        }
+        .box__image__my__nusa{
+          width: 650px;
+          height: 450px;
+          position: relative;
+          img{
+            object-fit: contain;
+            width: 100%;
+            display: block;
+            height: 100%;
+          }
+          .chatbox1{
+            width: 230px;
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            animation:  zoom ease-in 3.5s infinite;
+          }
+          .rectangle2{
+            width: 180px;
+            position: absolute;
+            left: 100px;
+            bottom: 30px; 
+            animation: zoom2 ease-in 3.5s infinite;
+            img{
+              width: 100%;
+            }
+          }
+          .rectangle3{
+            width: 200px;
+            position: absolute;
+            right: 70px;
+            bottom: 35px;
+            animation: zoom ease-in 3.5s infinite;
+            img{
+              width: 100%;
+            }
+          }
+        }
+        .box__image__my__nusa:hover{
+          animation: shake 150ms 2 linear;
+        }
+      }
+    }
+  }
+  section.about__my__nusa{
+    width: 100%;
+    padding: 100px 0px;
+    position: relative;
+    height: 100%;
+    background-color: var(--background-color-about);
+    .container__about__my__nusa{
+      max-width: 1200px;
+      margin: 0px auto;
+      .row__about__my__nusa{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        .box__about__my__nusa{
+          width: 60%;
+          font-family: $font-family-mullish;
+          span{
+            color: #004EEB;
+          }
+          h1{
+            font-size: 40px;
+            color: var(--color-about) ;
+            margin: 20px 0px;
+          }
+          p{
+            line-height: 1.5;
+            font-size: 15px;
+          }
+          button.btn__about{
+            margin: 20px 0px;
+            display: block;
+            padding: 12px 30px;
+            outline: none;
+            border: none;
+            font-family: $font-family-inter;
+            background-color: var(--color-border);
+            color: #fff;
+            border-radius: 6px;
+            letter-spacing: 1.2px;
+            cursor: pointer;
+          }
+        }
+        .box__about__my__nusa__image{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          img{
+            margin: 0px auto;
+          }
+        }
+      }
+    }
+  }
+  section.layanan__my__nusa{
+    padding: 100px 0px;
+    width: 100%;
+    background-color: var(--backgroud-banner);
+    .container__layanan__my__nusa{
+      max-width: 1200px;
+      margin: 0px auto;
+      font-family: $font-family-mullish;
+      h1{
+        width: 34%;
+        margin: 0px auto;
+        font-size: 30px;
+        text-align: center;
+        span{
+          color: var(--color-border);
+        }
+      }
+      .row__layanan__my__nusa{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        .box__layanan__my__nusa{
+          width: 300px;
+          height: 100%;
+          padding: 20px;
+          margin: 20px;
+          h3{
+            margin : 10px 0px;
+          }
+          p{
+            color: var(--color-text-layanan);
+          }
+          .book{
+            width: 45px;
+            height: 45px;
+            background: rgba(22, 179, 100, 0.1);;
+            border-radius: 10px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+  section.Faq__my__nusa{
+    padding: 50px 0px 0px;
+    position: relative;
+    .container__Faq__my__nusa{
+      max-width: 1350px;
+      margin: 0px auto;
+      .row__Faq__my__nusa{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .box__Faq__my__nusa{
+          width: 650px;
+          height: 500px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 60px;
+          font-family: $font-family-mullish;
+          background-color: var(--box-faq);
+          color: var(--color-about);
+          background-image: url('../assets/Dot\ Ornament.png');
+          background-repeat: no-repeat;
+          background-size: calc(100% -500px);
+          background-position-x: 20px;
+          background-position-y: 180px;
+          h1{
+            margin-top: 20px;
+            width: 70%;
+            font-size: 30px;
+            line-height: 1.5;
+            color: var(--color-about);
+          }
+        }
+        .box__Faq__my__nusa__form{
+          width: 650px;
+          height: 500px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 100px;
+          font-family: $font-family-mullish;
+          h2{
+            color: #0A0A0A;
+            line-height: 1.5;
+            font-weight: 500;
+          }
+          form.form__my__nusa{
+            width: 100%;
+            .input__group{
+              width: 100%;
+              margin-top: 20px;
+              label{
+                margin: 10px 0px;
+                display: block;
+                font-family: $font-family-inter;
+              }
+              input{
+                width: 100%;
+                font-family: $font-family-inter;
+                outline: none;
+                border: none;
+                color: var(--color-form);
+                background-color: #fff;
+                border:  1px solid #C2C2C2;
+                font-size: 15px;
+                padding: 6px 12px;
+                border-radius: 10px;
+                box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.08);
+              }
+              textarea{
+                width: 100%;
+                outline: none;
+                background: #FFFFFF;
+                box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.08);
+                border: 1px solid #C2C2C2;
+                border-radius: 10px;
+                height: 64px;
+                font-family: $font-family-inter;
+                padding: 6px 12px;
+              }
+            }
+            button.form__my__nusa{
+              width: 100%;
+              background-color: var(--color-border);
+              color: #fff;
+              display: block;
+              padding: 12px 30px;
+              margin: 20px 0px;
+              border: none;
+              outline: none;
+              border-radius: 10px;
+              cursor: pointer;
+              font-family: $font-family-inter;
+              letter-spacing: 1.5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate(3px, 0);
+  }
+  50% {
+    transform: translate(-3px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes zoom {
+  0%{
+    transform: translateX(-20px) scale(0.5);
+    opacity: 0;
+
+  }
+  50%{
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+
+
+  }
+  100%{
+    transform: translateX(-20px);
+    opacity: 0;
+
+  }
+}
+@keyframes zoom2 {
+  0%{
+    transform: translateX(-20px) scale(0.5);
+    opacity: 0;
+
+  }
+  50%{
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+
+
+  }
+  100%{
+    transform: translateX(20px);
+    opacity: 0;
+
+  }
+}

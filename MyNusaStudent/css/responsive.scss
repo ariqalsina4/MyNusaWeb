@@ -1,0 +1,365 @@
+@media screen and (max-width:1280px) {
+  .container{
+    width: 100%;
+    section.my__nusa{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+@media screen and (max-width:1024px){
+  .container{
+    width: 100%;
+    header{
+      width: 100%;
+    }
+    section.my__nusa{
+      width: 100%;
+      padding: 0px 10px;
+    }
+    section.about__my__nusa{
+      padding: 50px 10px;
+      .container__about__my__nusa{
+        width: 100%;
+      }
+    }
+    section.layanan__my__nusa{
+      width: 100%;
+      padding: 50px 10px;
+      .container__layanan__my__nusa{
+        .row__layanan__my__nusa{
+          margin-top: 40px;
+          .box__layanan__my__nusa{
+            width: 300px;
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:768px){
+  .container{
+    width: 100%;
+    header{
+      width: 100%;
+      .container__header{
+        width: 100%;
+      }
+    }
+    section.my__nusa{
+      width: 100%;
+      padding: 50px 10px;
+      min-height: 100%;
+      .container__my__nusa{
+        width: 100%;
+        .row__my__nusa{
+          .box__my__nusa{
+            width: 50%;
+            .button__banner{
+              button{
+                padding: 12px 25px;
+              }
+            }
+          }
+          .box__image__my__nusa{
+            width: 50%;
+            .chatbox1{
+              width: 150px;
+              right: 0;
+              img{
+                width: 100%;
+              }
+            }
+            .rectangle2{
+              width: 130px;
+             left: 20px;
+            }
+            .rectangle3{
+              width: 150px;
+              right: 0;
+              bottom: 55px;
+            }
+          }
+        }
+      }
+    }
+    section.about__my__nusa{
+      width: 100%;
+      padding: 50px 10px;
+      .container__about__my__nusa{
+        width: 100%;
+        .row__about__my__nusa{
+          .box__about__my__nusa{
+            width: 100%;
+          }
+          .box__about__my__nusa__image{
+            width: 100%;
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    section.layanan__my__nusa{
+      width: 100%;
+      padding: 50px 10px;
+      .container__layanan__my__nusa{
+        width: 100%;
+        .row__layanan__my__nusa{
+          .box__layanan__my__nusa{
+            width : 350px;
+            margin: 10px;
+          }
+        }
+      }
+    }
+    section.Faq__my__nusa{
+      width: 100%;
+      .container__Faq__my__nusa{
+        width: 100%;
+        .row__Faq__my__nusa{
+          .box__Faq__my__nusa{
+            width: 60%;
+            padding: 20px;
+            h1{
+              width: 100%;
+            }
+          }
+          .box__Faq__my__nusa__form{
+            width: 60%;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:570px) {
+  .container{
+    width: 100%;
+    header{
+      width: 100%;
+      .container__header{
+        width: 100%;
+        .logo__nusa{
+          position: relative;
+          z-index: 340;
+
+        }
+        .hamburger{
+          width: 30px;
+          height: 25px;
+          position: absolute;
+          right: 20px;
+          top: 15px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+          z-index: 400;
+          transition: 0.5s;
+          cursor: pointer;
+          span.bar{
+            width: 100%;
+            height: 3px;
+            background-color: #000;
+            transition: 0.5s;
+          }
+        }
+        .hamburger.hamburgerActive{
+          span.bar:first-child{
+            transform: rotate(45deg) translate(11px,7px);
+          }
+          span.bar:nth-child(2){
+            opacity: 0;
+            transform: translateX(10px);
+          }
+          span.bar:last-child{
+            transform: rotate(-45deg) translate(8px, -5px);
+          }
+        }
+        nav.nav__header__my__nusa{
+          width: 100%;
+          display: flex;
+          padding: 40px 0px;
+          position: absolute;
+          top: 0;
+          left: 100%;
+          z-index: 300;
+          right: -100px;
+          flex-direction: column;
+          box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+          background-color: var(--background-color-about);
+          transition: 0.5s ease-in;
+          ul{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+          }
+          .button__nav__container{
+            margin-top: 10px;
+            button{
+              display: block;
+              margin: 20px 0px;
+            }
+          }
+        }
+        nav.nav__header__my__nusa.navSlide{
+          right: 0px;
+          left: 0;
+        }
+      }
+    }
+    header.sticky{
+      padding: 3% 2%;
+    }
+    section.my__nusa{
+      width: 100%;
+      padding: 80px 10px;
+      .container__my__nusa{
+        width: 100%;
+        .row__my__nusa{
+          flex-direction: column-reverse;
+          margin: 0px;
+          .box__my__nusa{
+            width: 100%;
+            h1{
+              text-align: center;
+            }
+            .button__banner{
+              width: 100%;
+              button{
+                margin: 0px 10px;
+              }
+            }
+          }
+          .desc__text{
+            text-align: center;
+          }
+          .box__image__my__nusa{
+            width: 100%;
+            .chatbox1{
+              width: 150px;
+              right: 1px;
+            }
+            .rectangle2{
+              width: 150px;
+              left: 10px;
+            }
+            .rectangle3{
+              width: 150px;
+              right: -10px;
+              bottom: 70px;
+            }
+          }
+        }
+      }
+    }
+    section.about__my__nusa{
+      width: 100%;
+      padding: 50px 10px;
+      .container__about__my__nusa{
+        width: 100%;
+        .row__about__my__nusa{
+          .box__about__my__nusa{
+            width: 100%;
+            span{
+              text-align: center;
+              display: block;
+            }
+            h1{
+              text-align: center;
+              font-size: 35px;
+            }
+            p{
+              text-align: center;
+            }
+            button.btn__about{
+              margin: 30px auto;
+            }
+          }
+          .box__about__my__nusa__image{
+            width: 100%;
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    section.layanan__my__nusa{
+      padding: 50px 10px;
+      .container__layanan__my__nusa{
+        width: 100%;
+        h1{
+          width: 100%;
+        }
+        .row__layanan__my__nusa{
+          .box__layanan__my__nusa{
+            margin:25px auto;
+            padding: 0px;
+            text-align: center;
+            .book{
+              margin:25px auto;
+            }
+          }
+        }
+      }
+    }
+    section.Faq__my__nusa{
+      padding: 50px 10px;
+      .container__Faq__my__nusa{
+        width: 100%;
+        .row__Faq__my__nusa{
+          flex-direction: column;
+          .box__Faq__my__nusa{
+            width: 100%;
+            padding: 0px;
+            background-position-x: 100px;
+            img{
+              display: block;
+              margin: 0px auto;
+            }
+            h1{
+              text-align: center;
+              width: 100%;
+            }
+          }
+          .box__Faq__my__nusa__form{
+            width: 100%;
+            margin: 30px 0px;
+            padding: 0px;
+            text-align: center;
+            label{
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .container{
+    width: 100%;
+    section.my__nusa{
+      width: 100%;
+      .container__my__nusa{
+        width: 100%;
+        .row__my__nusa{
+          .box__my__nusa{
+            .button__banner{
+              button{
+                padding: 12px 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
